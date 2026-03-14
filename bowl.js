@@ -15,7 +15,7 @@ AFRAME.registerComponent("ball", {
     ballEl.setAttribute("id", "ball");
 
     let camPos = document.querySelector("#camera").getAttribute("position");
-    let dir = new Ammo.Vec3Real();
+    let dir = new THREE.Vector3();
     ballEl.setAttribute("position", camPos);
     document.querySelector("#camera").object3D.getWorldDirection(dir);
 
